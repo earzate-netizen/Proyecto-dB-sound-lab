@@ -58,11 +58,14 @@
 
 </nav>
 
-<button id="menu-toggle" class="menu-toggle"
- aria-label="Abrir menú" aria-expanded="false"
-  aria-controls="mobile-menu">☰</button>
-</div>
+<!--boton menú móvil-->
+<button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
 
+
+<!--Navegación móvil-->
 <nav id="mobile-menu" class="mobile-nav">
       <ul>
          <li>
@@ -88,36 +91,118 @@
 
 </header>
 
+<!--Incio main (principal) del desarrollo web-->
  <main>
-    <!--SECCIÓN CARRUSEL-->
 
-    <section id="carrusel" class="carousel-section container">
-        <h2> SONIDO EN OTRO NIVEL</h2>
+    <!--HERO/CARRUSEL INTERACTIVO DE 3 IMAGENES-->
+
+    <section id="inicio" class="hero-section">
         <div class="carousel-track" id="carouseltrackebc">
+
+          <!--Diapositiva 1 (tu branding)-->
            <div class="carousel-slide">
             <img src="img/Gemini_Generated_Image_vsj9kfvsj9kfvsj9.jpg" alt="imagen dB sound lab hero">
+            <div class="slide-overlay">
+                        <span class="badge">Experiencia Premium</span>
+                        <h1>Audio <span class="highlight-yellow">A OTRO NIVEL</span></h1>
+                        <p>Transforma tu espacio en una experiencia auditiva de otro mundo.</p>
+                        <a href="#servicios" class="btn-hero">Descubrir Productos</a>
+                    </div>
            </div>
            <!--Primera imagen hero-->
             <div class="carousel-slide">
             <img src="img/visual-seccion-equipos-audio-tiendas-altavoces-auriculares-sistemas-sonido_1314467-12914.avif" alt="imagen dB sound lab hero">
+            <div class="slide-overlay">
+                        <span class="badge">LAS MEJORES MARCAS</span>
+                        <h1> MARCAS <span class="highlight-yellow">PREMIUM</span></h1>
+                        <p>Las mejores mejores marcas de audio de alta fidelidad.</p>
+                        <a href="#servicios" class="btn-hero"> Nuestras marcas</a>
+                    </div>
            </div>
            <!--segunda imagen hero-->
            <div class="carousel-slide">
             <img src="img/Captura de pantalla 2026-10-12 071242.png" alt="imagen dB sound lab hero">
+            <div class="slide-overlay">
+                        <span class="badge">Experiencias premium</span>
+                        <h1>Sonido <span class="highlight-yellow">Como a ti te gusta</span></h1>
+                        <p>Nosotros tenemos lo que buscas en un solo lugar </p>
+                        <a href="#servicios" class="btn-hero">Descubrir servicios</a>
+                    </div>
            </div>
            <!--Tercera imagen hero-->
 
         </div>
 
+  <!-- Botones de Navegación del Carrusel -->
+            <button id="btn-prev" class="carousel-arrow prev" aria-label="Imagen anterior">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="btn-next" class="carousel-arrow next" aria-label="Imagen siguiente">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
 
+          <!-- Puntos Indicadores -->
+            <div class="carousel-dots" id="carousel-dots">
+                <button class="dot active" aria-label="Ir a diapositiva 1"></button>
+                <button class="dot" aria-label="Ir a diapositiva 2"></button>
+                <button class="dot" aria-label="Ir a diapositiva 3"></button>
+            </div>
 
+</section>
 
+<!-- SECCIÓN DE SERVICIOS -->
+        <section id="servicios" class="servicios-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>NUESTROS SERVICIOS</h2>
+                    <h3>Soluciones de Audio Hi-Fi</h3>
+                </div>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-couch"></i></div>
+                        <h4>Especialistas en audio</h4>
+                        <p>Asesoramiento integral para adaptar cualquier sala o habitación en un espacio sonorisado y tratado.</p>
+                    </div>
 
-    </section>
+                     <div class="card">
+                        <div class="card-icon red"><i class="fa-solid fa-volume-high"></i></div>
+                        <h4>Acústica Profesional</h4>
+                        <p>Tratamiento de audio e instalación de altavoces envolventes, paneles de sonido y consolas para una inmersión acústica completa.</p>
+                    </div>
 
+                    <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-microchip"></i></div>
+                        <h4> Venta de equipo</h4>
+                        <p>Contamos con la venta de mezcladoras, equipo de iluminación y pantallas para todo tipo de eventos</p>
+                    </div>
+               </div>
+          </div>
 
-
-<p>This is a paragraph.</p>
+      <section> 
+         <!-- SECCIÓN NOSOTROS -->
+        <section id="nosotros" class="nosotros-section">
+            <div class="container nosotros-inner">
+                <div class="nosotros-img">
+                    <img src="img/Captura de pantalla 2026-10-13 084254.png" alt="Experiencia cine en familia">
+                </div>
+                <div class="nosotros-info">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <h3>Apasionados por la música y el sonido.</h3>
+                    <p>En <strong>HOMVIE</strong>, bajo la dirección del Lic. Emiliano Arzate .</p>
+                    <p>Brindamos consultoría y soluciones a la medida de tu hogar para garantizar momentos inolvidables en familia.</p>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <span class="stat-num yellow">+150</span>
+                            <span class="stat-lbl">Proyectos</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num red">100%</span>
+                            <span class="stat-lbl">Satisfacción</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
@@ -148,6 +233,7 @@
   </div>
 </footer>
 
+<!--Archivo de java script externo-->
 <script src="js/script.js"></script>
 
 
